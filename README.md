@@ -9,6 +9,7 @@ The airline sells tickets for:
 - Three destinations: Chicago, Miami, and Portland
 - Two types of days: weekday and weekend
 - Cost per ticket for each type of travel:
+
 |               | WeekdayDay    | WeekdayNight  | WeekendDay    | WeekendNight  |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Miami         | 150           | 100           | 180           | 120           |
@@ -30,12 +31,14 @@ If the amount paid is less than the amount due, report that the amount paid is t
 
 ## My Approach
 1. I declared the following variables to hold values given by the user or values computed by the program:
-  | Variable type | int           | double        | char          | bool          |
-  | ------------- | ------------- | ------------- | ------------- | ------------- |
-  |               | flightTime    | ticketPrice   | destination   | isWeekend     |
-  |               | numTickets    | totalCost     | typeOfDay     | isDayFlight   |
-  |               |               | userPayment   |               |               |
-  |               |               | change        |               |               |
+
+| Variable type | int           | double        | char          | bool          |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|               | flightTime    | ticketPrice   | destination   | isWeekend     |
+|               | numTickets    | totalCost     | typeOfDay     | isDayFlight   |
+|               |               | userPayment   |               |               |
+|               |               | change        |               |               |
+
 2. I used the <code>cout</code> function to prompt the user to enter their destination and flight time.
 3. I used an if-else statement to evaluate whether the time the user entered is daytime or nighttime. If the time is between 5h00 and 19h00 then it is daytime or <code>isDayFlight = true</code>. Otherwise, it is nighttime or <code>isDayFlight = false</code>.
 4. I then prompted the user to enter the type of day they are traveling, E for weekends and D for weekdays. I then ran an if-else statement to evaluate whether their input is E. If it is then the user is traveling on weekends or <code>isWeekend=true</code>. Otherwise, the user is traveling on weekdays or <code>isWeekend=false</code>.
@@ -43,4 +46,3 @@ If the amount paid is less than the amount due, report that the amount paid is t
 6. I set precision to two decimal points and used the <code>cout</code> function to output the computed ticket price.
 7. I used the same function to prompt the user to enter the number of tickets they want and computed the total cost, which is the product of the said number times the ticket price. 
 8. I outputted the total and prompted the user to enter the amount paid. I ran the if-else statement to evaluate whether that amount is sufficient. If not, the program will display an error message. Otherwise, the program will calculate and print out the change, as well as, confirmed the tickets are purchased.
-9. 
